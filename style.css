@@ -652,9 +652,6 @@ body{
 
 /* resizing for phone web*/
 @media only screen and (max-width: 1040px) {
-    section {
-        font-size: 50%;
-    }
 
     .home-content h1 {
         display: flex;
