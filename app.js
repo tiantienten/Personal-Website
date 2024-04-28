@@ -29,13 +29,13 @@ window.onscroll = () => {
     header.classList.toggle('sticky', window.scrollY > 100);
 }
 
+//Contact form submission
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector('form');
     
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission behavior
+        event.preventDefault();
 
-        // Collecting the data from the form fields
         const formData = {
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
             message: document.getElementById('content').value
         };
 
-        // Print the form data to the console
         console.log("Form Data Submitted:", formData);
     });
 });
