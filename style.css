@@ -651,7 +651,7 @@ body{
 
 
 /* resizing for phone web*/
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 520px) {
     section {
         font-size: 50%;
     }
