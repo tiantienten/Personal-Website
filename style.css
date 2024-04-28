@@ -644,9 +644,21 @@ body{
 }
 
 /* breakpoints*/
-@media (max-width: 1200px) {
+@media (max-width: 520px) {
     html {
-        font-size: 55%;
+        font-size: 50%;
+    }
+
+    .home-content h1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .home-sci {
+        width: 160px;
+    }
+    .home-sci a{
+        width: 38px;
+        height: 38px;
     }
 }
 
