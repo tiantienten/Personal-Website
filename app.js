@@ -28,3 +28,25 @@ window.onscroll = () => {
     let header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector('form');
+    
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Collecting the data from the form fields
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phoneNumber: document.getElementById('number').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('content').value
+        };
+
+        // Print the form data to the console
+        console.log("Form Data Submitted:", formData);
+    });
+});
+
+

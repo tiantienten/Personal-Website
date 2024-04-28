@@ -171,6 +171,10 @@ body{
     font-weight: 600;
 }
 
+.navigation {
+    position: relative;
+}
+
 .navigation a {
     font-size: 20px;
     color: #ECFBFF;
@@ -341,6 +345,7 @@ body{
     border-right: 2px solid #081b29;
     border-top: 2px solid #009EFF;
     border-bottom: 2px solid #009EFF;
+    animation: aboutSpinner 8s linear infinite;
 }
 
 .about-content {
@@ -645,3 +650,17 @@ body{
     }
 }
 
+@media (max-width: 991px) {
+    .header {
+        padding: 20px 4%;
+    }
+    section {
+        padding : 100px
+    }
+}
+
+@keyframes aboutSpinner {
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
