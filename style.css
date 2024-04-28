@@ -154,6 +154,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
+    margin-top: -20px 10%;
     background: #081b29;
     display: flex;
     justify-content: space-between;
@@ -179,7 +180,7 @@ body{
     transition: 0.3s;
 }
 
-.navigation a:hover {
+.navigation a:hover, .navigation a.active {
     color: #8EAFCE;
 }
 
@@ -360,7 +361,6 @@ body{
 .buttons{
     display: inline-block;
     width: 150px;
-    margin-bottom: 100px;
 }
 
 .button-flex-box .buttons a::before {
@@ -457,7 +457,7 @@ body{
 
 .skills {
     min-height: auto;
-    padding-bottom: 70px;
+    padding-bottom: 70px; 
     background: #081b29;
 }
 
@@ -637,3 +637,11 @@ body{
 .contact form .input-box .input-field input:focus~.focus,.contact form .input-box .input-field input:valid~.focus, .contact form .text-area textarea:focus~.focus, .contact form .text-area textarea:valid~.focus{
     width: 100%
 }
+
+/* breakpoints*/
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
