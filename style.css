@@ -651,7 +651,7 @@ body{
 
 
 /* resizing for phone web*/
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 1040px) {
     section {
         font-size: 50%;
     }
@@ -662,12 +662,19 @@ body{
     }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 780px) {
     .home-content h1 {
         font-size: 52px;
     }
-    .education {
-        padding: 100px 4% 50px 5%;
+
+    .education-row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .skills {
+        display: flex;
+        flex-direction: column;
     }
     .contact form .input-box .input-field {
         width: 100%;
