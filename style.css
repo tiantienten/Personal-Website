@@ -639,13 +639,13 @@ body{
     transition: 0.5s;
 }
 
-.text-area .focus-large {
+.focus-large {
     position: absolute;
-    top: 0px;
+    top: 20px;
     left: 0px;
-    bottom: -10px;
+    bottom: 10px;
     width: 0%;
-    height: 100%;
+    height: 93%;
     background: #0a2e47;
     border-radius: 6px;
     z-index: -1;
@@ -664,7 +664,10 @@ body{
     flex-direction: column;
 }
 
-.contact form .input-box .input-field input:focus~.focus,.contact form .input-box .input-field input:valid~.focus, .contact form .text-area textarea:focus~.focus, .contact form .text-area textarea:valid~.focus{
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus, 
+.contact form .text-area textarea:focus~.focus-large, 
+.contact form .text-area textarea:valid~.focus-large{
     width: 100%
 }
 
