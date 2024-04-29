@@ -666,6 +666,11 @@ body{
     color: #081b29;
 }
 
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* resizing for phone web*/
 @media only screen and (max-width: 1040px) {
