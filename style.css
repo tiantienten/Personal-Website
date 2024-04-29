@@ -589,6 +589,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .contact form .input-box .input-field {
@@ -629,6 +630,18 @@ body{
 
 .contact form .focus {
     position: absolute;
+    top: 15px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background: #0a2e47;
+    border-radius: 6px;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.contact form .focus-large {
+    position: absolute;
     top: 0px;
     left: 0px;
     width: 0%;
@@ -647,6 +660,10 @@ body{
     100%{
         transform: translate(-50%, -50%) rotate(360deg);
     }
+}
+
+.dark {
+    color: #081b29;
 }
 
 

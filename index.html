@@ -194,36 +194,32 @@
          <h2 class = "heading">Contact <span>Me</span></h2>
          <form action = "#">
             <div class = "input-box">
-               <div class = "input-field">
-                  <input id = "name" type = "text" placeholder = "Full Name" required>
-                  <span class = "focus"></span>
-               </div>
+               <label class = "input-field dark"> name
+                     <input id = "name" type = "text" placeholder = "Full Name" required>
+                     <span class = "focus"></span>
+               </label>
 
-               <div class = "input-field">
-                  <label>
-                     EMAIL
+               <label class = "input-field dark"> email
                      <input id = "email" type = "text" placeholder = "Email Address"required>
+                     <span class = "focus"></span>
+               </label>
 
-                  </label>
-                  <span class = "focus"></span>
-               </div>
-
-               <div class = "input-field">
+               <label class = "input-field dark"> number
                   <input id = "number" type = "number" placeholder = "Phone Number" required>
                   <span class = "focus"></span>
-               </div>
+               </label>
 
-               <div class = "input-field">
+               <label class = "input-field dark"> subject
                   <input id = "subject" type = "text" placeholder = "Subject" required>
                   <span class = "focus"></span>
-               </div>
+               </label>
             </div>
-            <div class = "text-area">
+            <label class = "text-area dark"> 
                <textarea id = "content" name = "" id = "" cols = "30" rows = "10" placeholder = "Type Your Message Here" required></textarea>
-               <span class = "focus"></span>
-            </div>
+               <span class = "focus focus-large"></span>
+            </label>
 
-            <div class = "button-flex-box buttons">
+            <div class = "button-flex-box buttons"> 
                <button type = "submit" class = "button" id = "submitButton">Submit</button>
             </div>
          </form>
