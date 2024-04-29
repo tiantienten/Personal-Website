@@ -589,7 +589,6 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 30px;
 }
 
 .contact form .input-box .input-field {
@@ -598,7 +597,7 @@ body{
     margin: 8px 0;
 }
 
-.contact form .input-box .input-field input, .contact form .text-area textarea {
+.contact form .input-box .input-field input, textarea {
     width: 100%;
     height: 100%;
     padding: 15px;
@@ -640,7 +639,7 @@ body{
     transition: 0.5s;
 }
 
-.contact form .focus-large {
+.focus-large {
     position: absolute;
     top: 0px;
     left: 0px;
