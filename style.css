@@ -639,16 +639,29 @@ body{
     transition: 0.5s;
 }
 
-.focus-large {
+.text-area .focus-large {
     position: absolute;
     top: 0px;
     left: 0px;
+    bottom: -10px;
     width: 0%;
     height: 100%;
     background: #0a2e47;
     border-radius: 6px;
     z-index: -1;
     transition: 0.5s;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-area {
+    position: relative;
+    display: flex; 
+    flex-direction: column;
 }
 
 .contact form .input-box .input-field input:focus~.focus,.contact form .input-box .input-field input:valid~.focus, .contact form .text-area textarea:focus~.focus, .contact form .text-area textarea:valid~.focus{
@@ -661,14 +674,6 @@ body{
     }
 }
 
-.dark {
-    color: #081b29;
-}
-
-.box {
-    display: flex;
-    flex-direction: column;
-}
 
 
 /* resizing for phone web*/
