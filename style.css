@@ -147,7 +147,7 @@ body{
     animation-duration: 2.75s;
 }
 
-/*Navigation Bar*/
+/* Navigation Bar style */
 .header {
     position: fixed;
     top: 0;
@@ -188,13 +188,13 @@ body{
     color: #8EAFCE;
 }
 
-/*Home page*/
+/* Home page style */
 .home {
     height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
-    background: url("assets/forest-5319107_1280.png"); 
+    background: url("assets/forestBackground.png"); 
     background-size: cover;
     background-position: center;
 }
@@ -244,6 +244,7 @@ body{
     height: 50px;
 }
 
+/* buttons hover animation */
 .button-flex-box .button {
     position: relative;
     display: inline-flex;
@@ -333,6 +334,7 @@ body{
     border: 2px solid #009EFF;
 }
 
+/* spinning circle animation */
 .portrait .circle-animation {
     position: absolute;
     top: 50%;
@@ -372,7 +374,7 @@ body{
     background: #081b29;
 }
 
-/*Timelines theme*/
+/* Timelines style */
 .education {
     display: flex;
     justify-content: center;
@@ -425,6 +427,7 @@ body{
     overflow: hidden;
 }
 
+/* hover animation */
 .education-box .content::before{
     content: '';
     position: absolute;
@@ -460,6 +463,7 @@ body{
     padding-top: 5px;
 }
 
+/* Skill Page Settings */
 .skills {
     min-height: auto;
     padding-bottom: 70px; 
@@ -490,6 +494,7 @@ body{
     overflow: hidden;
 }
 
+/* hover animation */
 .skill-box .skill-content::before {
     content: '';
     position: absolute;
@@ -524,6 +529,7 @@ body{
     margin: 10px 0;
 }
 
+/* border for skill trees */
 .skill-content .progress .bar span {
     display: block;
     height: 100%;
@@ -531,7 +537,7 @@ body{
     background: #009EFF;
 }
 
-
+/* skill bar chart (length of each skill bar) */
 .skill-col:nth-child(1) .skill-content .progress:nth-child(1) .bar span{
     width: 90%
 }
@@ -572,7 +578,7 @@ body{
     width: 100%
 }
 
-/*Contact forms*/
+/*Contact forms style*/
 .contact {
     min-height: auto;
     padding-bottom: 70px;
@@ -597,6 +603,7 @@ body{
     margin: 8px 0;
 }
 
+/* border style */
 .contact form .input-box .input-field input, textarea {
     width: 100%;
     height: 100%;
@@ -608,6 +615,7 @@ body{
     border: 2px solid #009EFF;
 }
 
+/* placeholder colors */
 .contact form .input-box .input-field input::placeholder,
 .contact form .text-area textarea::placeholder {
     color: aliceblue;
@@ -627,6 +635,7 @@ body{
     cursor: pointer;
 }
 
+/* hover animation */
 .contact form .focus {
     position: absolute;
     top: 15px;
@@ -707,7 +716,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 780px) {
     .home {
         justify-content: center;
     }
